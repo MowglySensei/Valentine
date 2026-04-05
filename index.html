@@ -3,13 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Success Screen</title>
+    <title>Valentine's Day</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
+        .container { text-align: center; }
+        .gif { margin: 20px 0; }
+        .text { margin: 20px 0; font-size: 1.2em; }
+        @media (max-width: 600px) {
+            .text { font-size: 1em; }
+        }
+    </style>
 </head>
 <body>
-    <h1>YESSS</h1>
-    <div style="text-align:center;">
-        <img src="path/to/your.gif" alt="Success GIF">
+    <div class="container">
+        <h1>YESSS</h1>
+        <div class="gif">
+            <img src="path_to_your_gif.gif" alt="Celebration GIF" style="max-width:100%; height:auto;">
+        </div>
+        <div class="text">
+            <p>Happy Valentine's Day to everyone!</p>
+        </div>
     </div>
-    <p>Your success message goes here.</p>
 </body>
 </html>
