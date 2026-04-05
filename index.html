@@ -150,11 +150,32 @@
 
   yesBtn.addEventListener("click", () => {
     document.body.innerHTML = `
-    <h1 style="color:#e91e63;">YEEEEEEEEEESS 💖</h1>
-    <p>Je savais que tu dirais oui 😏 À ce soir je viens te chercher!😉🤭 </p>
-    <img src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExNWlic2syb2djbjByMjVndHhjZTc4d3ZnYXp0ZXEwNHNqZW4yZDc4ZCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/PPgZCwZPKrLcw75EG1/giphy.gif" alt="GIF spécial" style="width: min(350px, 70vw); height: auto; margin-top: 20px;">
-    `;
+<div style="
+  display:flex;
+  flex-direction:column;
+  justify-content:space-between;
+  align-items:center;
+  height:100vh;
+  text-align:center;
+  padding:20px;
+  box-sizing:border-box;
+">
 
+  <h1 style="color:#e91e63; margin-top:10px;">
+    YEEEEEEEEEESS 💖
+  </h1>
+
+  <img 
+    src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExNWlic2syb2djbjByMjVndHhjZTc4d3ZnYXp0ZXEwNHNqZW4yZDc4ZCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/PPgZCwZPKrLcw75EG1/giphy.gif" 
+    style="width: min(350px, 80vw); height:auto;"
+  >
+
+  <p style="color:#333; font-size:18px; margin-bottom:20px;">
+    Je savais que tu dirais oui 😏 À ce soir je viens te chercher!😉🤭
+  </p>
+
+</div>
+`;
     let duration = 3000;
     let end = Date.now() + duration;
 
